@@ -1,0 +1,146 @@
+body {
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* 밝은 회색 배경 */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 상단 정렬 */
+    min-height: 100vh;
+}
+
+/* 폰트 정의 (preload-preconnect를 사용했으므로 여기서 직접 불러오지 않아도 됨) */
+/* Noto Sans KR (Korean) for body, Roboto (English) for specific titles if needed */
+
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 40px 20px; /* 위아래 여백, 좌우 자동 */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.5em;
+    color: #2c3e50; /* 진한 회색 */
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #7f8c8d; /* 회색 */
+    margin-top: 0;
+    font-weight: 400;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h3 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.welcome-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.welcome-section .update-message {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #e67e22; /* 주황색 강조 */
+    margin-top: 30px;
+}
+
+.welcome-section .update-message span:first-child {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.welcome-section .update-message span:last-child {
+    font-family: 'Roboto', sans-serif;
+}
+
+.placeholder-section {
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px dashed #ccc;
+    margin-top: 40px;
+    color: #999;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header h2 {
+        font-size: 1.2em;
+    }
+    .welcome-section h3 {
+        font-size: 1.5em;
+    }
+    .welcome-section p {
+        font-size: 1em;
+    }
+    .welcome-section .update-message {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    header h2 {
+        font-size: 1em;
+    }
+    .welcome-section h3 {
+        font-size: 1.3em;
+    }
+    .welcome-section p {
+        font-size: 0.95em;
+    }
+}
